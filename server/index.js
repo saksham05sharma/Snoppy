@@ -39,6 +39,12 @@ const io = socket(server, {
   },
 });
 
+async function createCollections(){
+  
+}
+
+createCollections();
+
 global.onlineUsers = new Map();
 io.on("connection", (socket) => {
   global.chatSocket = socket;
